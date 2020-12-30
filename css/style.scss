@@ -413,6 +413,7 @@ body {
 
   .in-progress{
       flex-direction: column;
+      text-align: center;
 
       img{
           width: 100%;
@@ -423,6 +424,7 @@ body {
       h1{
           font-size: 2rem;
           margin-top: 50px;
+          margin-left: 0;
           padding: 0 10px;
       }
   }

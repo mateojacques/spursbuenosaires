@@ -441,6 +441,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    text-align: center;
   }
   .in-progress img {
     width: 100%;
@@ -450,6 +451,7 @@ body {
   .in-progress h1 {
     font-size: 2rem;
     margin-top: 50px;
+    margin-left: 0;
     padding: 0 10px;
   }
   #contact-main {
