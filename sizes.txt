@@ -1,0 +1,12 @@
+Mobile Portrait 400x600
+Mobile Landscape 600x400
+Small tablet portrait 600x800 x
+Small tablet landscape 800x600 x
+Tablet portrait 768x1024 x
+Tablet landscape 1024x768 x
+Desktop 1366x768
+Desktop 2 1440×900
+Desktop 3 1536×864
+Desktop HD 1920x1080
+
+

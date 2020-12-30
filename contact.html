@@ -8,9 +8,9 @@
     <title>Contacto - OSC Spurs Buenos Aires</title>
   </head>
   <body>
-    <div class="container" style="width: 70%">
+    <div class="container">
       <header id="header">
-        <a href="#"
+        <a href="index.html"
           ><img
             src="res/img/logo-white.png"
             alt="OSC Spurs Buenos Aires"
@@ -26,24 +26,34 @@
         </nav>
       </header>
 
-      <main style="padding: 0 20px; line-height: 25px" id="main">
-        <h1>A la comunidad la hacemos entre todos</h1>
-        <br />
-        <p>
-          Si tenés alguna duda o sugerencia acerca del proyecto, no dudes en
-          escribirnos a nuestro mail <b>bsas.spurs@gmail.com</b> o llená el
-          formulario para ponerte en contacto con nosotros.
-        </p>
+      <main id="contact-main">
+        <div>
+          <h1>A la comunidad la hacemos entre todos</h1>
+          <br />
+          <p>
+            Si tenés alguna duda o sugerencia acerca del proyecto, no dudes en
+            escribirnos a nuestro mail <b>bsas.spurs@gmail.com</b> o llená el
+            formulario para ponerte en contacto con nosotros.
+          </p>
+        
 
         <form netlify id="contact-form">
           <label for="name">Nombre</label>
-          <input type="text" name="name" id="name"/>
+          <input type="text" name="name" id="name" />
           <label for="mail">Correo electrónico</label>
-          <input placeholder="ejemplo@gmail.com" type="mail" name="mail" id="mail"/>
+          <input
+            placeholder="ejemplo@gmail.com"
+            type="mail"
+            name="mail"
+            id="mail"
+          />
           <label for="msg">Mensaje</label>
           <textarea name="msg" id="msg" cols="30" rows="10"></textarea>
-          <input type="submit" id="contact-submit"/>
+          <input type="submit" id="contact-submit" />
         </form>
+      </div>
+
+        <img src="res/img/Hugo-Lloris.png" alt="">
       </main>
       <footer id="footer">Mateo Jacques 2021 - OSC Spurs Buenos Aires</footer>
     </div>
