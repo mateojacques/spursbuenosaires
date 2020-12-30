@@ -1,0 +1,189 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif !important;
+  background-color: #fff;
+}
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+#header {
+  width: 100%;
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 40px;
+}
+
+#header .logo {
+  width: 100px;
+  height: 100px;
+}
+
+#header #nav {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header #links {
+  list-style: none;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#header #links .current {
+  font-weight: bold;
+  color: #001F52;
+}
+
+#header #links .link {
+  text-decoration: none;
+  color: #000;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.link:hover {
+  opacity: 0.5;
+}
+
+#showcase {
+  width: 100%;
+  height: 450px;
+  background: url(../res/img/tottenham-hotspur-stadium3.jpg) fixed no-repeat;
+  color: #fff;
+  padding: 60px 0 30px 50px;
+}
+
+#showcase h1 {
+  color: #fff;
+  font-size: 75px;
+  padding-bottom: 20px;
+}
+
+#showcase p {
+  width: 70%;
+}
+
+#showcase .showcase-btns {
+  width: 60%;
+  margin-top: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+#showcase .showcase-btns a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #fff;
+  padding: .75rem 1.5rem;
+  border-radius: 15px 5px;
+  -webkit-transition: 1s;
+  transition: 1s;
+  border: 3px solid #fff;
+}
+
+.showcase-btn:hover {
+  background-color: #001F52 !important;
+}
+
+#main {
+  width: 100%;
+  margin: 30px 0;
+}
+
+#footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 30px 0;
+  background-color: #f3f3f3;
+}
+
+#contact-form {
+  width: 70%;
+  min-height: 400px;
+  margin-top: 40px;
+  background-color: #001F52;
+  color: #fff;
+  font-weight: 200;
+  padding: 15px;
+  -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.2);
+  border: 2px solid #001F52;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#contact-form input, #contact-form textarea {
+  font-family: 'Rubik', sans-serif;
+  border: none;
+}
+
+#contact-form #name {
+  width: 30%;
+  height: 25px;
+  margin: 5px 0 10px 0;
+  padding-left: 5px;
+}
+
+#contact-form #mail {
+  width: 50%;
+  height: 25px;
+  margin: 5px 0 20px 0;
+  padding-left: 5px;
+}
+
+#contact-form #msg {
+  width: 95%;
+  min-height: 100px;
+  margin: 5px 0 20px 0;
+  padding: 5px;
+}
+
+#contact-form #contact-submit {
+  padding: .75rem 1.5rem;
+  width: 20%;
+  font-weight: 500;
+}
+/*# sourceMappingURL=style.css.map */
