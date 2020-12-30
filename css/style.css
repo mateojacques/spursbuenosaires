@@ -445,12 +445,12 @@ body {
   .in-progress img {
     width: 100%;
     margin-top: 50px;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   .in-progress h1 {
     font-size: 2rem;
     margin-top: 50px;
-    padding: 0 20px;
+    padding: 0 10px;
   }
   #contact-main {
     padding: 0 25px;
@@ -460,6 +460,12 @@ body {
   }
   #contact-main #contact-form input {
     width: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) and (max-height: 850px) {
+  .front-btns {
+    display: none !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
