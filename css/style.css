@@ -197,12 +197,48 @@ body {
   margin: 0 auto;
 }
 
-#club-main h1 {
-  font-size: 3rem;
-  margin: 50px 0 30px 0;
+#club-main .club-item__content {
+  width: 100%;
+  max-height: 0px;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+  overflow: hidden;
 }
 
-#club-main p {
+#club-main .club-item .club-item__head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px 0;
+  padding: 0.75rem 1.5rem;
+  background: #f3f3f3;
+}
+
+#club-main .club-item .club-item__head img {
+  width: 20px;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 20px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+#club-main .club-item .club-item__head h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  cursor: pointer;
+}
+
+#club-main .club-item .club-item__content h1 {
+  font-size: 3rem;
+  margin: 30px 0 30px 0;
+}
+
+#club-main .club-item .club-item__content p {
+  font-size: 1.1rem;
   margin-bottom: 40px;
 }
 

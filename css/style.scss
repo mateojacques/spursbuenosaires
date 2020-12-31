@@ -144,7 +144,7 @@ body {
 }
 
 //CLUB PAGE
-#club-main{
+#club-main {
   width: 80%;
   padding: 0 30px 30px 30px;
   overflow: hidden;
@@ -153,13 +153,47 @@ body {
   align-items: center;
   margin: 0 auto;
 
-  h1{
-    font-size: 3rem;
-    margin: 50px 0 30px 0;
+  .club-item__content {
+    width: 100%;
+    max-height: 0px;
+    transition: 1.5s;
+    overflow: hidden;
   }
 
-  p{
-    margin-bottom: 40px;
+  .club-item {
+    .club-item__head {
+      display: flex;
+      align-items: center;
+      margin: 40px 0;
+      padding: 0.75rem 1.5rem;
+      background: #f3f3f3;
+
+      img {
+        width: 20px;
+        cursor: pointer;
+        display: inline-block;
+        margin-right: 20px;
+        transition: 1s;
+      }
+
+      h1 {
+        font-size: 1.4rem;
+        margin: 0;
+        cursor: pointer;
+      }
+    }
+
+    .club-item__content {
+      h1 {
+        font-size: 3rem;
+        margin: 30px 0 30px 0;
+      }
+
+      p {
+        font-size: 1.1rem;
+        margin-bottom: 40px;
+      }
+    }
   }
 }
 
@@ -426,39 +460,39 @@ body {
     }
   }
 
-  .in-progress{
-      flex-direction: column;
-      text-align: center;
+  .in-progress {
+    flex-direction: column;
+    text-align: center;
 
-      img{
-          width: 100%;
-          margin-top: 50px;
-          padding: 0 10px;
-      }
+    img {
+      width: 100%;
+      margin-top: 50px;
+      padding: 0 10px;
+    }
 
-      h1{
-          font-size: 2rem;
-          margin-top: 50px;
-          margin-left: 0;
-          padding: 0 10px;
-      }
+    h1 {
+      font-size: 2rem;
+      margin-top: 50px;
+      margin-left: 0;
+      padding: 0 10px;
+    }
   }
 
-  #contact-main{
-      padding: 0 25px;
+  #contact-main {
+    padding: 0 25px;
 
-      #contact-form{
-          width: 100% !important;
+    #contact-form {
+      width: 100% !important;
 
-          input{
-              width: 60%;
-          }
+      input {
+        width: 60%;
       }
+    }
   }
 }
 
-@media screen and (max-width: 400px) and (max-height: 850px){
-    .front-btns{
-        display: none !important;
-    }
+@media screen and (max-width: 400px) and (max-height: 850px) {
+  .front-btns {
+    display: none !important;
+  }
 }
