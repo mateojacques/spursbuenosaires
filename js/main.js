@@ -9,5 +9,3 @@ menuBtn.addEventListener('click', () => {
 closeBtn.addEventListener('click', () => {
     menu.style.transform = 'translateX(200px)';
 })
-
-console.log(1);
