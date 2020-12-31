@@ -35,7 +35,7 @@ for (let titleIndex = 0; titleIndex < titles.length; titleIndex++) {
       arrows[titleIndex].style.transform = "rotate(90deg)";
       for (let contIndex = 0; contIndex < contents.length; contIndex++) {
         if (contIndex == titleIndex) {
-          contents[contIndex].style.maxHeight = "1000px";
+          contents[contIndex].style.maxHeight = "2000px";
         } else {
         }
       }

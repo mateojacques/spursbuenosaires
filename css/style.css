@@ -453,6 +453,9 @@ body {
   #contact-main #contact-form {
     width: 90% !important;
   }
+  #club-main {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -527,6 +530,19 @@ body {
 @media screen and (max-width: 400px) and (max-height: 850px) {
   .front-btns {
     display: none !important;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  #club-main {
+    padding: 0 5px;
+  }
+  .club-item {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .club-item .club-item__head h1 {
+    font-size: 1rem !important;
   }
 }
 /*# sourceMappingURL=style.css.map */
