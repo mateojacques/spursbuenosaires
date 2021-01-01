@@ -153,14 +153,9 @@ body {
   align-items: center;
   margin: 0 auto;
 
-  .club-item__content {
-    width: 100%;
-    max-height: 0px;
-    transition: 1.5s;
-    overflow: hidden;
-  }
-
   .club-item {
+    width: 100%;
+
     .club-item__head {
       display: flex;
       align-items: center;
@@ -184,6 +179,11 @@ body {
     }
 
     .club-item__content {
+      width: 100%;
+      max-height: 0px;
+      transition: 1.5s;
+      overflow: hidden;
+
       h1 {
         font-size: 3rem;
         margin: 30px 0 30px 0;
@@ -192,6 +192,37 @@ body {
       p {
         font-size: 1.1rem;
         margin-bottom: 40px;
+      }
+    }
+
+    #banner-cards {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+
+      .banner-card {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 50px;
+
+        .banner-card__img {
+          width: 100%;
+          height: 400px;
+        }
+
+        .banner-card__text {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          padding-top: 15px;
+          border-top: 2px solid black;
+          text-align: center;
+
+          h2 {
+            margin-bottom: 10px;
+          }
+        }
       }
     }
   }
@@ -265,6 +296,18 @@ body {
     padding: 0.75rem 1.5rem;
     width: 20%;
     font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 1650px){
+  #banner-cards{
+    grid-template-columns: 1fr 1fr !important;
+  }
+}
+
+@media screen and (max-width: 1020px){
+  #banner-cards{
+    grid-template-columns: 1fr !important;
   }
 }
 
@@ -420,7 +463,7 @@ body {
     }
   }
 
-  #club-main{
+  #club-main {
     width: 100%;
   }
 }
@@ -501,16 +544,16 @@ body {
   }
 }
 
-@media screen and (max-width: 350px){
-#club-main{
-  padding: 0 5px;
-}
+@media screen and (max-width: 350px) {
+  #club-main {
+    padding: 0 5px;
+  }
 
-  .club-item{
+  .club-item {
     margin: 0 auto;
     max-width: 90%;
-    .club-item__head{
-      h1{
+    .club-item__head {
+      h1 {
         font-size: 1rem !important;
       }
     }
