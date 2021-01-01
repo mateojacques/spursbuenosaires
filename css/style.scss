@@ -308,6 +308,10 @@ body {
 @media screen and (max-width: 1020px){
   #banner-cards{
     grid-template-columns: 1fr !important;
+
+    .banner-card__img{
+     
+    }
   }
 }
 
