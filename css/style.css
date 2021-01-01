@@ -289,6 +289,10 @@ body {
   margin-bottom: 10px;
 }
 
+#club-main .club-item #banner-cards .banner-card .banner-card__text p {
+  font-size: 1rem;
+}
+
 #contact-main {
   padding: 15px 15px 0 15px;
   display: -webkit-box;
@@ -365,13 +369,6 @@ body {
   font-weight: 500;
 }
 
-@media screen and (max-width: 1020px) {
-  #banner-cards {
-    -ms-grid-columns: 1fr 1fr !important;
-        grid-template-columns: 1fr 1fr !important;
-  }
-}
-
 @media screen and (max-width: 1366px) {
   .container {
     width: 100%;
@@ -406,6 +403,13 @@ body {
   }
   #contact-main img {
     display: none;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  #banner-cards {
+    -ms-grid-columns: 1fr 1fr !important;
+        grid-template-columns: 1fr 1fr !important;
   }
 }
 
