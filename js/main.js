@@ -1,10 +1,11 @@
 //INTRO ANIMATION 
+window.onload = () => {
+  const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
 
-const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
-
-tl.to(".intro-text", {y: "0px", duration: 2});
-tl.to(".away", {opacity: 0, duration: 1});
-tl.to(".intro", {y: "100%", duration: 2, delay: 1});
+  tl.to(".intro-text", { y: "0px", duration: 2, delay: 1 });
+  tl.to(".away", { opacity: 0, duration: 1 });
+  tl.to(".intro", { y: "100%", duration: 2, delay: 1 });
+};
 
 
 
@@ -55,23 +56,23 @@ for (let titleIndex = 0; titleIndex < titles.length; titleIndex++) {
 //ARROW DROPDOWN
 
 for (let arrIndex = 0; arrIndex < arrows.length; arrIndex++) {
-    arrows[arrIndex].addEventListener("click", () => {
-      if (arrows[arrIndex].style.transform == "") {
-        arrows[arrIndex].style.transform = "rotate(90deg)";
-        for (let contIndex = 0; contIndex < contents.length; contIndex++) {
-          if (contIndex == arrIndex) {
-            contents[contIndex].style.maxHeight = "8000px";
-          } else {
-          }
-        }
-      } else {
-        arrows[arrIndex].style.transform = "";
-        for (let contIndex = 0; contIndex < contents.length; contIndex++) {
-          if (contIndex == arrIndex) {
-            contents[contIndex].style.maxHeight = "0px";
-          } else {
-          }
+  arrows[arrIndex].addEventListener("click", () => {
+    if (arrows[arrIndex].style.transform == "") {
+      arrows[arrIndex].style.transform = "rotate(90deg)";
+      for (let contIndex = 0; contIndex < contents.length; contIndex++) {
+        if (contIndex == arrIndex) {
+          contents[contIndex].style.maxHeight = "8000px";
+        } else {
         }
       }
-    });
-  }
+    } else {
+      arrows[arrIndex].style.transform = "";
+      for (let contIndex = 0; contIndex < contents.length; contIndex++) {
+        if (contIndex == arrIndex) {
+          contents[contIndex].style.maxHeight = "0px";
+        } else {
+        }
+      }
+    }
+  });
+}
