@@ -197,6 +197,14 @@ body {
   margin: 0 auto;
 }
 
+#club-main .club-main__img {
+  width: 100%;
+  height: 500px;
+  background: url(../res/img/TH_hero2.jpg) no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+}
+
 #club-main .club-item {
   width: 100%;
 }
@@ -237,13 +245,26 @@ body {
 }
 
 #club-main .club-item .club-item__content h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin: 30px 0 30px 0;
 }
 
 #club-main .club-item .club-item__content p {
   font-size: 1.1rem;
   margin-bottom: 40px;
+}
+
+#club-main .club-item .club-item__content .content-grid {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#club-main .club-item .club-item__content .content-grid img {
+  width: 100%;
 }
 
 #club-main .club-item #banner-cards {
@@ -477,6 +498,10 @@ body {
   #front .front-btns .front-btn {
     background-color: #001f52;
   }
+  .content-grid {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+  }
   #contact-form {
     width: 70% !important;
   }
@@ -513,6 +538,13 @@ body {
   }
   #club-main {
     width: 100%;
+  }
+  #club-main .club-main__img {
+    background: url(../res/img/Th_hero-mobile.jpg) no-repeat;
+    background-size: cover;
+  }
+  #club-main .content-grid {
+    display: none;
   }
 }
 
