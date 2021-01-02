@@ -52,6 +52,15 @@
       <footer id="footer">Mateo Jacques 2021 - OSC Spurs Buenos Aires</footer>
     </div>
 
-    <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+
+  <script>
+    const tl = gsap.timeline({defaults: {ease: "power1.out", duration: 1}});
+
+    tl.to(".fade", {opacity: 1});
+  </script>
   </body>
 </html>
