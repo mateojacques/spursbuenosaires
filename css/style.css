@@ -586,6 +586,7 @@ body {
   #club-main .club-main__img {
     background: url(../res/img/Th_hero-mobile.jpg) no-repeat;
     background-size: cover;
+    background-position: center;
   }
   #club-main .content-grid {
     display: none;
