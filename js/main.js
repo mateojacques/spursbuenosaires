@@ -2,9 +2,9 @@
 window.onload = () => {
   const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
 
-  tl.to(".intro-text", { y: "0px", duration: 2, delay: 1 });
-  tl.to(".away", { opacity: 0, duration: 1 });
-  tl.to(".intro", { y: "100%", duration: 2, delay: 1 });
+  tl.to(".intro-text-span", { y: "0px", duration: 2, stagger: 0.1});
+  tl.to(".away", { opacity: 0, duration: 0.5 });
+  tl.to(".intro", { y: "100%", duration: 1, delay: 1 });
 };
 
 

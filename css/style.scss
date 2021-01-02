@@ -15,7 +15,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-  background: url(../res/img/tottenham-hotspur-stadium.jpg) no-repeat;
+  background: #fff;//url(../res/img/intro-bg.png) fixed no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -24,10 +24,19 @@ body {
   overflow: hidden;
 
   .intro-text{
-    color: #fff;
-    font-style: italic;
-    font-size: 4rem;
-    transform: translateY(100%);
+    color: #000;
+        font-style: italic;
+        font-size: 4rem;
+
+    .hide{
+      background: #fff;
+
+      span{
+        transform: translateY(100%);
+        display: inline-block;
+        
+      }
+    }
   }
 }
 
