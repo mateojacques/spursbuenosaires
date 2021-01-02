@@ -1,70 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="res/img/logo-png.png">
-    <link rel="stylesheet" href="css/style.css" />
-    <title>OSC Spurs Buenos Aires</title>
-  </head>
-  <body>
-    <div class="container">
-      <header id="header">
-        <a href="index.html"
-          ><img
-            src="res/img/logo-white.png"
-            alt="OSC Spurs Buenos Aires"
-            class="logo"
-        /></a>
-        <nav id="nav">
-          <ul id="links">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="res/img/logo-png.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <title>OSC Spurs Buenos Aires</title>
+</head>
+
+<body>
+  <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide"><span>C</span><span class="away">ome</span></h1>
+      <h1 class="hide"><span>O</span><span class="away">n</span></h1>
+      <h1 class="hide"><span>Y</span><span class="away">ou</span></h1>
+      <h1 class="hide"><span>S</span><span class="away">purs</span></h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <header id="header">
+      <a href="index.html"><img src="res/img/logo-white.png" alt="OSC Spurs Buenos Aires" class="logo" /></a>
+      <nav id="nav">
+        <ul id="links">
+          <li><a class="link current" href="#">inicio</a></li>
+          <li><a class="link" href="the-club.html">el club</a></li>
+          <li><a class="link" href="about.html">nosotros</a></li>
+          <li><a class="link" href="contact.html">contacto</a></li>
+        </ul>
+
+        <button id="menu-btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+
+        <div id="menu">
+          <ul id="links-mobile">
             <li><a class="link current" href="#">inicio</a></li>
             <li><a class="link" href="the-club.html">el club</a></li>
             <li><a class="link" href="about.html">nosotros</a></li>
             <li><a class="link" href="contact.html">contacto</a></li>
           </ul>
 
-          <button id="menu-btn">
-            <div></div>
-            <div></div>
-            <div></div>
-          </button>
+          <button id="close-btn">X</button>
+        </div>
+      </nav>
 
-          <div id="menu">
-            <ul id="links-mobile">
-              <li><a class="link current" href="#">inicio</a></li>
-              <li><a class="link" href="the-club.html">el club</a></li>
-              <li><a class="link" href="about.html">nosotros</a></li>
-              <li><a class="link" href="contact.html">contacto</a></li>
-            </ul>
 
-            <button id="close-btn">X</button>
-          </div>
-        </nav>
+    </header>
 
-        
-      </header>
+    <section id="front">
+      <h1>COMPARTÍ NUESTRA<br> PASIÓN</h1>
+      <p>Conocé más sobre nosotros y enterate acerca de lo que ofrecemos para una comunidad de simpatizantes del
+        Tottenham en constante crecimiento.</p>
+      <div class="front-btns">
+        <a class="front-btn" href="#">EL CLUB</a>
+        <a class="front-btn" href="#">LA COMUNIDAD</a>
+        <a class="front-btn" href="#">NOSOTROS</a>
+      </div>
 
-      <section id="front">
-            <h1>COMPARTÍ NUESTRA<br> PASIÓN</h1>
-            <p>Conocé más sobre nosotros y enterate acerca de lo que ofrecemos para una comunidad de simpatizantes del Tottenham en constante crecimiento.</p>
-            <div class="front-btns">
-                <a class="front-btn" href="#">EL CLUB</a>
-                <a class="front-btn" href="#">LA COMUNIDAD</a>
-                <a class="front-btn" href="#">NOSOTROS</a>
-            </div>
-        
-      </section>
+    </section>
 
-      
 
-      <main id="main">
-      </main>
 
-      <footer id="footer">Mateo Jacques 2021 - OSC Spurs Buenos Aires
-      </footer>
-    </div>
+    <main id="main">
+    </main>
 
-    <script src="js/main.js"></script>
-  </body>
+    <footer id="footer">Mateo Jacques 2021 - OSC Spurs Buenos Aires
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+</body>
+
 </html>

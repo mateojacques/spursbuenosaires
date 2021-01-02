@@ -1,3 +1,13 @@
+//INTRO ANIMATION 
+
+const tl = gsap.timeline({defaults: {ease: 'power1.out'}});
+
+tl.to(".intro-text", {y: "0px", duration: 2});
+tl.to(".away", {opacity: 0, duration: 1});
+tl.to(".intro", {y: "100%", duration: 2, delay: 1});
+
+
+
 //MOBILE MENU
 
 let menuBtn = document.getElementById("menu-btn");

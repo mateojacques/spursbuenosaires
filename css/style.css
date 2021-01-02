@@ -10,6 +10,38 @@ body {
   background-color: #fff;
 }
 
+.intro {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url(../res/img/tottenham-hotspur-stadium.jpg) no-repeat;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  overflow: hidden;
+}
+
+.intro .intro-text {
+  color: #fff;
+  font-style: italic;
+  font-size: 4rem;
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%);
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
