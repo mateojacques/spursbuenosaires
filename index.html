@@ -77,6 +77,16 @@
     integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
     crossorigin="anonymous"></script>
   <script src="js/main.js"></script>
+  <script>
+    //INTRO ANIMATION 
+    window.onload = () => {
+      const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
+
+      tl.to(".intro-text-span", { y: "0px", duration: 2, stagger: 0.1 });
+      tl.to(".away", { opacity: 0, duration: 0.5 });
+      tl.to(".intro", { y: "100%", duration: 1, delay: 0.5 });
+    };
+  </script>
 </body>
 
 </html>
