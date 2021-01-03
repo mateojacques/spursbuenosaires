@@ -652,7 +652,7 @@ body {
   }
 }
 
-@media screen and (max-width: 1020px) {
+@media screen and (max-width: 1024px) {
   #banner-cards {
     -ms-grid-columns: 1fr 1fr !important;
         grid-template-columns: 1fr 1fr !important;
