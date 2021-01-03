@@ -9,12 +9,48 @@ body {
   background-color: #fff;
 }
 
+.intro{
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;//url(../res/img/intro-bg.png) fixed no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+
+  .intro-text{
+    color: #000;
+        font-style: italic;
+        font-size: 4rem;
+
+    .hide{
+      background: #fff;
+      overflow: hidden;
+
+      span{
+        transform: translateY(100%);
+        display: inline-block;
+        
+      }
+    }
+  }
+}
+
 .container {
   width: 80%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+}
+
+.fade{
+  opacity: 0;
 }
 
 //HEADER
@@ -66,10 +102,10 @@ body {
 }
 
 //FRONT
-#front {
+.front {
   width: 100%;
   height: 450px;
-  background: url(../res/img/front-1920x1080.jpg) fixed no-repeat;
+  background: url(../res/img/front-1920x1080.jpg) no-repeat;
   color: #fff;
   padding: 60px 0 30px 50px;
 
@@ -106,6 +142,11 @@ body {
   }
 }
 
+.forum-front{
+  background: url(../res/img/forum-hero.png) no-repeat !important;
+  margin: 0 auto !important;
+}
+
 .front-btn:hover {
   background-color: #001f52 !important;
 }
@@ -113,7 +154,7 @@ body {
 //MAIN
 #main {
   width: 100%;
-  margin: 30px 0;
+  margin-top: 30px;
 }
 
 //IN PROGRESS
@@ -129,6 +170,71 @@ body {
     font-size: 70px;
     margin-left: 30px;
     margin-top: 100px;
+  }
+}
+
+//PRESENTATION
+.presentation{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 50px 20px 70px 20px;
+  color: #000;
+  background:url(../res/img/presentation-bg-transparent.png) no-repeat;
+  background-size: cover;
+
+  .presentation-title{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 30px 0;
+
+    h1{
+      font-size: 3rem; 
+      margin-bottom: 25px;
+      font-weight: bolder;
+    }
+
+    h2{
+      font-weight: 200;
+    }
+  }
+
+  .presentation-items{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    text-align: center;
+
+    .presentation-item{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      margin: 0 auto;
+      padding: .75rem 1.5rem;
+     // box-shadow: 1px 11px 8px 0px rgba(202,202,202,0.75);
+      cursor: pointer;
+
+      .presentation-item__title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+
+        > i{
+          font-size: 1.5rem;
+          margin-right: 15px;
+        }
+      }
+
+      p{
+        font-weight: normal;
+      }
+    }
   }
 }
 
@@ -152,6 +258,14 @@ body {
   flex-direction: column;
   align-items: center;
   margin: 0 auto;
+
+  .club-main__img{
+    width: 100%;
+    height: 500px;
+    background: url(../res/img/TH_hero2.jpg) no-repeat;
+    background-size: cover;
+    margin: 0 auto;
+  }
 
   .club-item {
     width: 100%;
@@ -185,13 +299,26 @@ body {
       overflow: hidden;
 
       h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         margin: 30px 0 30px 0;
       }
 
       p {
         font-size: 1.1rem;
         margin-bottom: 40px;
+      }
+
+      .content-grid{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+
+        img{
+          width: 100%;
+        }
+
+        
       }
     }
 
@@ -231,6 +358,70 @@ body {
     }
   }
 }
+
+//IMAGE CAROUSEL (from codepen)
+$carousel-height: 500px;
+$control-size: 50px;
+
+.carousel {
+  width: 100%;
+  height: $carousel-height;
+  border-radius: 3px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+  
+  &:hover .controls {
+    opacity: 1;
+  }
+  
+  .controls {
+    opacity: 0;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    justify-content: space-between;
+    width: 100%;
+    z-index: 99999;
+    transition: all ease 0.5s;
+    
+    .control {
+      margin: 0 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 40px;
+      width: 40px;
+      border-radius: 50%;
+      background-color: rgba(255, 255, 255, 0.7);
+      opacity: .5;
+      transition: ease .3s;
+      cursor: pointer;
+      
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
+  
+    .slides {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      display: flex;
+      width: 100%;
+      transition: 1s ease-in-out all;
+      
+      .slide {
+        min-width: 100%;
+        min-height: $carousel-height;
+        height: auto;
+      }
+    }
+}
+
 
 //CONTACT PAGE
 #contact-main {
@@ -308,8 +499,8 @@ body {
     width: 100%;
   }
 
-  #front {
-    background: url(../res/img/front-1366x768.jpg) fixed no-repeat;
+  .front {
+    background: url(../res/img/front-1366x768.jpg) no-repeat;
   }
 
   #contact-main {
@@ -332,7 +523,7 @@ body {
 }
 
 @media screen and (max-width: 1250px) {
-  #front {
+  .front {
     background: url(../res/img/front-1024x768.jpg) no-repeat;
 
     .front-btns {
@@ -359,6 +550,16 @@ body {
 @media screen and (max-width: 1020px) {
   #banner-cards {
     grid-template-columns: 1fr 1fr !important;
+  }
+
+  $carousel-height-mobile: 300px;
+
+  .carousel{
+    height: $carousel-height-mobile !important;
+
+    .slides{
+      min-height: $carousel-height-mobile !important;
+    }
   }
 }
 
@@ -406,7 +607,7 @@ body {
     }
   }
 
-  #front {
+  .front {
     padding-top: 80px;
     background: url(../res/img/front-768x1024.jpg) no-repeat;
 
@@ -423,6 +624,10 @@ body {
     }
   }
 
+  .content-grid{
+    grid-template-columns: 1fr !important;
+  }
+
   #contact-form {
     width: 70% !important;
 
@@ -430,6 +635,28 @@ body {
       min-width: 30%;
     }
   }
+
+  #forum-link{
+    width: 100%; height: 100%; position:absolute; top: 0; left: 0;
+  }
+
+  .presentation{
+    align-items: center !important;
+    //HACER BG MOBILE VERSION!!!
+    background: url(../res/img/presentation-bg-dark.png) no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: #fff !important;
+
+    .presentation-title{
+      width: 100% !important;
+    }
+
+    .presentation-items{
+      width: 100% !important;
+    }
+  }
+  
 }
 
 @media screen and (max-width: 600px) {
@@ -439,7 +666,7 @@ body {
     }
   }
 
-  #front {
+  .front {
     background: url(../res/img/front-600x800.jpg) no-repeat;
     padding-left: 20px;
     h1 {
@@ -469,6 +696,22 @@ body {
 
   #club-main {
     width: 100%;
+
+    .club-main__img{
+      background: url(../res/img/Th_hero-mobile.jpg) no-repeat;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .content-grid{
+      display: none;
+    }
+  }
+
+  .presentation{
+    .presentation-items{
+      grid-template-columns: 1fr !important;
+    }
   }
 }
 
@@ -502,7 +745,7 @@ body {
     }
   }
 
-  #front {
+  .front {
     padding-top: 40px;
     background: url(../res/img/front-mobile.jpg);
 

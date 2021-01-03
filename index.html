@@ -1,70 +1,155 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="res/img/logo-png.png">
-    <link rel="stylesheet" href="css/style.css" />
-    <title>OSC Spurs Buenos Aires</title>
-  </head>
-  <body>
-    <div class="container">
-      <header id="header">
-        <a href="index.html"
-          ><img
-            src="res/img/logo-white.png"
-            alt="OSC Spurs Buenos Aires"
-            class="logo"
-        /></a>
-        <nav id="nav">
-          <ul id="links">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="res/img/logo-png.png">
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+    integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+    crossorigin="anonymous" />
+  <title>OSC Spurs Buenos Aires</title>
+</head>
+
+<body>
+  <div class="intro" style="z-index: 5">
+
+    <div class="intro-text">
+      <h1 class="hide"><span class="intro-text-span">C</span><span class="intro-text-span away">ome</span></h1>
+      <h1 class="hide"><span class="intro-text-span">O</span><span class="intro-text-span away">n</span></h1>
+      <h1 class="hide"><span class="intro-text-span">Y</span><span class="intro-text-span away">ou</span></h1>
+      <h1 class="hide"><span class="intro-text-span">S</span><span class="intro-text-span away">purs</span></h1>
+    </div>
+  </div>
+
+  <div class="container">
+    <header id="header">
+      <a href="index.html"><img src="res/img/logo-white.png" alt="OSC Spurs Buenos Aires" class="logo" /></a>
+      <nav id="nav">
+        <ul id="links">
+          <li><a class="link current" href="#">inicio</a></li>
+          <li><a class="link" href="the-club.html">el club</a></li>
+          <li><a class="link" href="about.html">nosotros</a></li>
+          <li><a class="link" href="contact.html">contacto</a></li>
+        </ul>
+
+        <button id="menu-btn">
+          <div></div>
+          <div></div>
+          <div></div>
+        </button>
+
+        <div id="menu">
+          <ul id="links-mobile">
             <li><a class="link current" href="#">inicio</a></li>
             <li><a class="link" href="the-club.html">el club</a></li>
             <li><a class="link" href="about.html">nosotros</a></li>
             <li><a class="link" href="contact.html">contacto</a></li>
           </ul>
 
-          <button id="menu-btn">
-            <div></div>
-            <div></div>
-            <div></div>
-          </button>
+          <button id="close-btn">X</button>
+        </div>
+      </nav>
 
-          <div id="menu">
-            <ul id="links-mobile">
-              <li><a class="link current" href="#">inicio</a></li>
-              <li><a class="link" href="the-club.html">el club</a></li>
-              <li><a class="link" href="about.html">nosotros</a></li>
-              <li><a class="link" href="contact.html">contacto</a></li>
-            </ul>
 
-            <button id="close-btn">X</button>
-          </div>
-        </nav>
+    </header>
 
-        
-      </header>
+    <section class="front">
+      <h1>COMPARTÍ NUESTRA<br> PASIÓN</h1>
+      <p>Conocé más sobre nosotros y enterate acerca de lo que ofrecemos para una comunidad de simpatizantes del
+        Tottenham en constante crecimiento.</p>
+      <div class="front-btns">
+        <a class="front-btn" href="the-club.html">EL CLUB</a>
+        <a class="front-btn" href="#">LA COMUNIDAD</a>
+        <a class="front-btn" href="about.html">NOSOTROS</a>
+      </div>
 
-      <section id="front">
-            <h1>COMPARTÍ NUESTRA<br> PASIÓN</h1>
-            <p>Conocé más sobre nosotros y enterate acerca de lo que ofrecemos para una comunidad de simpatizantes del Tottenham en constante crecimiento.</p>
-            <div class="front-btns">
-                <a class="front-btn" href="#">EL CLUB</a>
-                <a class="front-btn" href="#">LA COMUNIDAD</a>
-                <a class="front-btn" href="#">NOSOTROS</a>
-            </div>
-        
-      </section>
+    </section>
 
-      
+    <section class="presentation">
 
-      <main id="main">
-      </main>
+      <div class="presentation-title">
 
-      <footer id="footer">Mateo Jacques 2021 - OSC Spurs Buenos Aires
-      </footer>
-    </div>
+        <h1>OFFICIAL SUPPORTERS CLUB BUENOS AIRES</h1>
 
-    <script src="js/main.js"></script>
-  </body>
+        <h2>Apoyamos al Tottenham Hotspur desde la Ciudad del Tango.</h2>
+
+      </div>
+
+      <div class="presentation-items">
+
+        <div class="presentation-item">
+          <div class="presentation-item__title">
+          <i class="far fa-newspaper"></i>
+          <h1>Información</h1>
+        </div>
+          <p>Te mantenemos informado acerca del presente del club.</p>
+        </div>
+
+        <div class="presentation-item">
+          <div class="presentation-item__title">
+          <i class="fas fa-comments"></i>
+          <h1>Conversación</h1>
+        </div>
+          <p>Ofrecemos un espacio de debate, análisis y reflexión post-partidos.</p>
+        </div>
+
+        <div class="presentation-item">
+          <div class="presentation-item__title">
+          <i class="fas fa-paint-brush"></i>
+          <h1>Gráficas</h1>
+        </div>
+          <p>Diseñamos honrando nuestros colores e historia.</p>
+        </div>
+
+        <div class="presentation-item">
+          <div class="presentation-item__title">
+          <i class="fas fa-heart"></i>
+          <h1>Pasión</h1>
+        </div>
+          <p>Por la camiseta. De hinchas, para hinchas.</p>
+        </div>
+      </div>
+
+
+
+    </section>
+
+    <section style="position:relative; z-index: 0" class="front forum-front"><a id="forum-link" href="#"> </a>
+      <h1>ALZÁ LA VOZ</h1>
+
+      <p>Visitá nuestro foro y conectá con otros miembros de la comunidad. Mantenete al día en los debates, las
+        opiniones y dudas de la mayor comunidad de Spurs en habla hispana. </p>
+
+      <div class="front-btns">
+
+        <a class="front-btn" href="#">FORO SPURS</a>
+
+      </div>
+    </section>
+
+    <main id="main">
+    </main>
+
+    <footer id="footer">Mateo Jacques 2021 - OSC Spurs Buenos Aires
+    </footer>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+    integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+    crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
+  <script>
+    //INTRO ANIMATION 
+    window.onload = () => {
+      const tl = gsap.timeline({ defaults: { ease: 'power1.out' } });
+
+      tl.to(".intro-text-span", { y: "0px", duration: 2, stagger: 0.1 });
+      tl.to(".away", { opacity: 0, duration: 0.5 });
+      tl.to(".intro", { y: "100%", duration: 1, delay: 0.5 });
+    };
+  </script>
+</body>
+
 </html>
