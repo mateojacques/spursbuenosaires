@@ -144,7 +144,7 @@ body {
 
 .forum-front{
   background: url(../res/img/forum-hero.png) no-repeat !important;
-  margin: 30px auto !important;
+  margin: 0 auto !important;
 }
 
 .front-btn:hover {
@@ -154,7 +154,7 @@ body {
 //MAIN
 #main {
   width: 100%;
-  margin: 30px 0;
+  margin-top: 30px;
 }
 
 //IN PROGRESS
@@ -170,6 +170,71 @@ body {
     font-size: 70px;
     margin-left: 30px;
     margin-top: 100px;
+  }
+}
+
+//PRESENTATION
+.presentation{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 50px 20px 70px 20px;
+  color: #000;
+  background:url(../res/img/presentation-bg-transparent.png) no-repeat;
+  background-size: cover;
+
+  .presentation-title{
+    width: 50%;
+    text-align: center;
+    margin-bottom: 70px;
+    padding: 30px 0;
+
+    h1{
+      font-size: 3rem; 
+      margin-bottom: 25px;
+      font-weight: bolder;
+    }
+
+    h2{
+      font-weight: 200;
+    }
+  }
+
+  .presentation-items{
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 80px;
+    text-align: center;
+
+    .presentation-item{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      font-weight: bold;
+      margin: 0 auto;
+      padding: .75rem 1.5rem;
+     // box-shadow: 1px 11px 8px 0px rgba(202,202,202,0.75);
+      cursor: pointer;
+
+      .presentation-item__title{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 15px;
+
+        > i{
+          font-size: 1.5rem;
+          margin-right: 15px;
+        }
+      }
+
+      p{
+        font-weight: normal;
+      }
+    }
   }
 }
 
@@ -570,6 +635,27 @@ $control-size: 50px;
       min-width: 30%;
     }
   }
+
+  #forum-link{
+    width: 100%; height: 100%; position:absolute; top: 0; left: 0;
+  }
+
+  .presentation{
+    align-items: center !important;
+    //HACER BG MOBILE VERSION!!!
+    background: url(../res/img/presentation-bg-dark.png) no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
+    color: #fff !important;
+
+    .presentation-title{
+      width: 100% !important;
+    }
+
+    .presentation-items{
+      width: 100% !important;
+    }
+  }
   
 }
 
@@ -619,6 +705,12 @@ $control-size: 50px;
 
     .content-grid{
       display: none;
+    }
+  }
+
+  .presentation{
+    .presentation-items{
+      grid-template-columns: 1fr !important;
     }
   }
 }
