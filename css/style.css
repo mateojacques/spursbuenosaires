@@ -131,26 +131,26 @@ body {
   display: none;
 }
 
-#front {
+.front {
   width: 100%;
   height: 450px;
-  background: url(../res/img/front-1920x1080.jpg) fixed no-repeat;
+  background: url(../res/img/front-1920x1080.jpg) no-repeat;
   color: #fff;
   padding: 60px 0 30px 50px;
 }
 
-#front h1 {
+.front h1 {
   color: #fff;
   font-size: 75px;
   padding-bottom: 20px;
 }
 
-#front p {
+.front p {
   width: 60%;
   font-size: 1.2rem;
 }
 
-#front .front-btns {
+.front .front-btns {
   width: 60%;
   margin-top: 60px;
   display: -webkit-box;
@@ -161,7 +161,7 @@ body {
           justify-content: space-between;
 }
 
-#front .front-btns .front-btn {
+.front .front-btns .front-btn {
   text-decoration: none;
   font-weight: bold;
   color: #fff;
@@ -181,6 +181,11 @@ body {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.forum-front {
+  background: url(../res/img/forum-hero.png) no-repeat !important;
+  margin: 30px auto !important;
 }
 
 .front-btn:hover {
@@ -515,8 +520,8 @@ body {
   .container {
     width: 100%;
   }
-  #front {
-    background: url(../res/img/front-1366x768.jpg) fixed no-repeat;
+  .front {
+    background: url(../res/img/front-1366x768.jpg) no-repeat;
   }
   #contact-main {
     padding: 15px 50px 0 50px;
@@ -530,10 +535,10 @@ body {
 }
 
 @media screen and (max-width: 1250px) {
-  #front {
+  .front {
     background: url(../res/img/front-1024x768.jpg) no-repeat;
   }
-  #front .front-btns {
+  .front .front-btns {
     margin-top: 50px;
   }
   #contact-main h1 {
@@ -612,17 +617,17 @@ body {
     border-radius: 50%;
     margin-top: auto;
   }
-  #front {
+  .front {
     padding-top: 80px;
     background: url(../res/img/front-768x1024.jpg) no-repeat;
   }
-  #front h1 {
+  .front h1 {
     font-size: 50px;
   }
-  #front .front-btns {
+  .front .front-btns {
     width: 80%;
   }
-  #front .front-btns .front-btn {
+  .front .front-btns .front-btn {
     background-color: #001f52;
   }
   .content-grid {
@@ -641,19 +646,19 @@ body {
   #header #nav {
     width: 70%;
   }
-  #front {
+  .front {
     background: url(../res/img/front-600x800.jpg) no-repeat;
     padding-left: 20px;
   }
-  #front h1 {
+  .front h1 {
     font-size: 40px;
   }
-  #front .front-btns {
+  .front .front-btns {
     margin-top: 60px;
     padding-right: 15px;
     width: 100%;
   }
-  #front .front-btns .front-btn {
+  .front .front-btns .front-btn {
     width: 25%;
     font-size: 15px;
     margin-bottom: 20px;
@@ -709,11 +714,11 @@ body {
     border: 2px solid black;
     border-radius: 20px;
   }
-  #front {
+  .front {
     padding-top: 40px;
     background: url(../res/img/front-mobile.jpg);
   }
-  #front .front-btns {
+  .front .front-btns {
     display: none;
   }
   .in-progress {
