@@ -9,13 +9,13 @@ body {
   background-color: #fff;
 }
 
-.intro{
+.intro {
   width: 100%;
   height: 100vh;
   position: fixed;
   top: 0;
   left: 0;
-  background: #fff;//url(../res/img/intro-bg.png) fixed no-repeat;
+  background: #fff; //url(../res/img/intro-bg.png) fixed no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
@@ -23,19 +23,18 @@ body {
   align-items: center;
   overflow: hidden;
 
-  .intro-text{
+  .intro-text {
     color: #000;
-        font-style: italic;
-        font-size: 4rem;
+    font-style: italic;
+    font-size: 4rem;
 
-    .hide{
+    .hide {
       background: #fff;
       overflow: hidden;
 
-      span{
+      span {
         transform: translateY(100%);
         display: inline-block;
-        
       }
     }
   }
@@ -49,7 +48,7 @@ body {
   min-height: 100vh;
 }
 
-.fade{
+.fade {
   opacity: 0;
 }
 
@@ -142,7 +141,7 @@ body {
   }
 }
 
-.forum-front{
+.forum-front {
   background: url(../res/img/forum-hero.png) no-repeat !important;
   margin: 0 auto !important;
 }
@@ -174,64 +173,68 @@ body {
 }
 
 //PRESENTATION
-.presentation{
+.presentation {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
-  padding: 50px 20px 70px 20px;
+  padding: 40px 90px 100px 20px;
   color: #000;
-  background:url(../res/img/presentation-bg-transparent.png) no-repeat;
+  background: url(../res/img/presentation-bg-transparent.png) no-repeat;
   background-size: cover;
 
-  .presentation-title{
+  .presentation-title {
     width: 50%;
     text-align: center;
     margin-bottom: 70px;
     padding: 30px 0;
 
-    h1{
-      font-size: 3rem; 
-      margin-bottom: 25px;
+    h1 {
+      font-size: 5rem;
       font-weight: bolder;
     }
 
-    h2{
+    h2 {
+      font-weight: 500;
+      margin-bottom: 30px;
+    }
+
+    h3 {
       font-weight: 200;
     }
   }
 
-  .presentation-items{
+  .presentation-items {
     width: 50%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     row-gap: 80px;
     text-align: center;
 
-    .presentation-item{
+    .presentation-item {
       width: 80%;
       display: flex;
       flex-direction: column;
       font-weight: bold;
       margin: 0 auto;
-      padding: .75rem 1.5rem;
-     // box-shadow: 1px 11px 8px 0px rgba(202,202,202,0.75);
+      padding: 0.75rem 1.5rem;
+      // box-shadow: 1px 11px 8px 0px rgba(202,202,202,0.75);
       cursor: pointer;
 
-      .presentation-item__title{
+      .presentation-item__title {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
         margin-bottom: 15px;
 
-        > i{
+        > i {
           font-size: 1.5rem;
           margin-right: 15px;
         }
       }
 
-      p{
+      p {
         font-weight: normal;
       }
     }
@@ -259,7 +262,7 @@ body {
   align-items: center;
   margin: 0 auto;
 
-  .club-main__img{
+  .club-main__img {
     width: 100%;
     height: 500px;
     background: url(../res/img/TH_hero2.jpg) no-repeat;
@@ -308,17 +311,27 @@ body {
         margin-bottom: 40px;
       }
 
-      .content-grid{
+      .content-grid {
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 20px;
+        max-height: 1000px;
+        overflow: hidden;
 
-        img{
+        img {
           width: 100%;
         }
 
-        
+        .table-desktop {
+          width: 100%;
+          height: 700px;
+        }
+
+        .table-mobile {
+          width: 100%;
+          display: none;
+        }
       }
     }
 
@@ -350,7 +363,7 @@ body {
             margin-bottom: 10px;
           }
 
-          p{
+          p {
             font-size: 1rem;
           }
         }
@@ -370,11 +383,11 @@ $control-size: 50px;
   overflow: hidden;
   position: relative;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
-  
+
   &:hover .controls {
     opacity: 1;
   }
-  
+
   .controls {
     opacity: 0;
     display: flex;
@@ -385,7 +398,7 @@ $control-size: 50px;
     width: 100%;
     z-index: 99999;
     transition: all ease 0.5s;
-    
+
     .control {
       margin: 0 5px;
       display: flex;
@@ -395,33 +408,32 @@ $control-size: 50px;
       width: 40px;
       border-radius: 50%;
       background-color: rgba(255, 255, 255, 0.7);
-      opacity: .5;
-      transition: ease .3s;
+      opacity: 0.5;
+      transition: ease 0.3s;
       cursor: pointer;
-      
+
       &:hover {
         opacity: 1;
       }
     }
   }
-  
-    .slides {
-      position: absolute;
-      top: 50%;
-      left: 0;
-      transform: translateY(-50%);
-      display: flex;
-      width: 100%;
-      transition: 1s ease-in-out all;
-      
-      .slide {
-        min-width: 100%;
-        min-height: $carousel-height;
-        height: auto;
-      }
-    }
-}
 
+  .slides {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    display: flex;
+    width: 100%;
+    transition: 1s ease-in-out all;
+
+    .slide {
+      min-width: 100%;
+      min-height: $carousel-height;
+      height: auto;
+    }
+  }
+}
 
 //CONTACT PAGE
 #contact-main {
@@ -517,9 +529,9 @@ $control-size: 50px;
 
   //#banner-cards{
   //  p{
-    //  font-size: 0.9rem !important;
+  //  font-size: 0.9rem !important;
   //  }
- // }
+  // }
 }
 
 @media screen and (max-width: 1250px) {
@@ -554,11 +566,31 @@ $control-size: 50px;
 
   $carousel-height-mobile: 300px;
 
-  .carousel{
+  .carousel {
     height: $carousel-height-mobile !important;
 
-    .slides{
+    .slides {
       min-height: $carousel-height-mobile !important;
+    }
+  }
+
+  .presentation {
+    align-items: center !important;
+    //HACER BG MOBILE VERSION!!!
+    //background: url(../res/img/presentation-bg-dark.png) no-repeat !important;
+    //background-size: cover !important;
+    //background-position: center !important;
+    //color: #fff !important;
+    background: #fff !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+
+    .presentation-title {
+      width: 100% !important;
+    }
+
+    .presentation-items {
+      width: 100% !important;
     }
   }
 }
@@ -624,7 +656,7 @@ $control-size: 50px;
     }
   }
 
-  .content-grid{
+  .content-grid {
     grid-template-columns: 1fr !important;
   }
 
@@ -636,27 +668,13 @@ $control-size: 50px;
     }
   }
 
-  #forum-link{
-    width: 100%; height: 100%; position:absolute; top: 0; left: 0;
+  #forum-link {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
   }
-
-  .presentation{
-    align-items: center !important;
-    //HACER BG MOBILE VERSION!!!
-    background: url(../res/img/presentation-bg-dark.png) no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
-    color: #fff !important;
-
-    .presentation-title{
-      width: 100% !important;
-    }
-
-    .presentation-items{
-      width: 100% !important;
-    }
-  }
-  
 }
 
 @media screen and (max-width: 600px) {
@@ -697,21 +715,33 @@ $control-size: 50px;
   #club-main {
     width: 100%;
 
-    .club-main__img{
+    .club-main__img {
       background: url(../res/img/Th_hero-mobile.jpg) no-repeat;
       background-size: cover;
       background-position: center;
     }
 
-    .content-grid{
-      display: none;
+    .content-grid {
+      .table-desktop {
+        display: none !important;
+      }
+
+      .table-mobile {
+        display: flex !important;
+      }
     }
   }
 
-  .presentation{
-    .presentation-items{
+  .presentation {
+    .presentation-items {
       grid-template-columns: 1fr !important;
     }
+  }
+
+  .forum-front{
+    background: url(../res/img/forum-hero-mobile.png) no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
   }
 }
 

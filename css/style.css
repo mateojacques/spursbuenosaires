@@ -226,7 +226,7 @@ body {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  padding: 50px 20px 70px 20px;
+  padding: 40px 90px 100px 20px;
   color: #000;
   background: url(../res/img/presentation-bg-transparent.png) no-repeat;
   background-size: cover;
@@ -240,12 +240,16 @@ body {
 }
 
 .presentation .presentation-title h1 {
-  font-size: 3rem;
-  margin-bottom: 25px;
+  font-size: 5rem;
   font-weight: bolder;
 }
 
 .presentation .presentation-title h2 {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.presentation .presentation-title h3 {
   font-weight: 200;
 }
 
@@ -270,7 +274,7 @@ body {
           flex-direction: column;
   font-weight: bold;
   margin: 0 auto;
-  padding: .75rem 1.5rem;
+  padding: 0.75rem 1.5rem;
   cursor: pointer;
 }
 
@@ -394,10 +398,22 @@ body {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   gap: 20px;
+  max-height: 1000px;
+  overflow: hidden;
 }
 
 #club-main .club-item .club-item__content .content-grid img {
   width: 100%;
+}
+
+#club-main .club-item .club-item__content .content-grid .table-desktop {
+  width: 100%;
+  height: 700px;
+}
+
+#club-main .club-item .club-item__content .content-grid .table-mobile {
+  width: 100%;
+  display: none;
 }
 
 #club-main .club-item #banner-cards {
@@ -493,9 +509,9 @@ body {
   width: 40px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.7);
-  opacity: .5;
-  -webkit-transition: ease .3s;
-  transition: ease .3s;
+  opacity: 0.5;
+  -webkit-transition: ease 0.3s;
+  transition: ease 0.3s;
   cursor: pointer;
 }
 
@@ -647,6 +663,20 @@ body {
   .carousel .slides {
     min-height: 300px !important;
   }
+  .presentation {
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    background: #fff !important;
+    padding-right: 20px !important;
+    padding-left: 20px !important;
+  }
+  .presentation .presentation-title {
+    width: 100% !important;
+  }
+  .presentation .presentation-items {
+    width: 100% !important;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -730,21 +760,6 @@ body {
     top: 0;
     left: 0;
   }
-  .presentation {
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
-    background: url(../res/img/presentation-bg-dark.png) no-repeat !important;
-    background-size: cover !important;
-    background-position: center !important;
-    color: #fff !important;
-  }
-  .presentation .presentation-title {
-    width: 100% !important;
-  }
-  .presentation .presentation-items {
-    width: 100% !important;
-  }
 }
 
 @media screen and (max-width: 600px) {
@@ -781,12 +796,22 @@ body {
     background-size: cover;
     background-position: center;
   }
-  #club-main .content-grid {
-    display: none;
+  #club-main .content-grid .table-desktop {
+    display: none !important;
+  }
+  #club-main .content-grid .table-mobile {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
   }
   .presentation .presentation-items {
     -ms-grid-columns: 1fr !important;
         grid-template-columns: 1fr !important;
+  }
+  .forum-front {
+    background: url(../res/img/forum-hero-mobile.png) no-repeat !important;
+    background-size: cover !important;
+    background-position: center !important;
   }
 }
 
