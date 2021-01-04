@@ -228,7 +228,7 @@ body {
           align-items: flex-end;
   padding: 40px 90px 100px 20px;
   color: #000;
-  background: url(../res/img/presentation-bg-transparent.png) no-repeat;
+  background: url(../res/img/presentation-bg-transparent2.png) no-repeat;
   background-size: cover;
 }
 
@@ -539,6 +539,35 @@ body {
   height: auto;
 }
 
+#about {
+  width: 100%;
+  padding: 30px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+#about .about-item {
+  margin-bottom: 70px;
+}
+
+#about .about-item a > img {
+  width: 50%;
+}
+
+#about .about-item h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+#about .about-item p {
+  font-size: 1.2rem;
+  width: 80%;
+  margin-bottom: 65px;
+}
+
 #contact-main {
   padding: 15px 15px 0 15px;
   display: -webkit-box;
@@ -631,6 +660,9 @@ body {
   #contact-main #contact-form #msg {
     min-height: 100px;
   }
+  #about {
+    padding: 30px 60px;
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -658,10 +690,10 @@ body {
         grid-template-columns: 1fr 1fr !important;
   }
   .carousel {
-    height: 300px !important;
+    height: 500px !important;
   }
   .carousel .slides {
-    min-height: 300px !important;
+    min-height: 500px !important;
   }
   .presentation {
     -webkit-box-align: center !important;
@@ -676,6 +708,11 @@ body {
   }
   .presentation .presentation-items {
     width: 100% !important;
+  }
+  #about {
+    -ms-grid-columns: 1fr !important;
+        grid-template-columns: 1fr !important;
+    padding: 30px !important;
   }
 }
 

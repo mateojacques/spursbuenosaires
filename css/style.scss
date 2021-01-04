@@ -180,7 +180,7 @@ body {
   align-items: flex-end;
   padding: 40px 90px 100px 20px;
   color: #000;
-  background: url(../res/img/presentation-bg-transparent.png) no-repeat;
+  background: url(../res/img/presentation-bg-transparent2.png) no-repeat;
   background-size: cover;
 
   .presentation-title {
@@ -435,6 +435,37 @@ $control-size: 50px;
   }
 }
 
+//ABOUT PAGE
+#about{
+ width: 100%;
+ padding: 30px;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 50px;
+
+ .about-item{
+   margin-bottom: 70px;
+
+   a{
+    > img{
+      width: 50%;
+    }
+   }
+   
+
+   h1{
+     font-size: 2.5rem;
+     margin-bottom: 20px;
+   }
+
+   p{
+     font-size: 1.2rem;
+     width: 80%;
+     margin-bottom: 65px;
+   }
+ }
+}
+
 //CONTACT PAGE
 #contact-main {
   padding: 15px 15px 0 15px;
@@ -527,11 +558,9 @@ $control-size: 50px;
     }
   }
 
-  //#banner-cards{
-  //  p{
-  //  font-size: 0.9rem !important;
-  //  }
-  // }
+  #about{
+    padding:  30px 60px;
+  }
 }
 
 @media screen and (max-width: 1250px) {
@@ -564,7 +593,7 @@ $control-size: 50px;
     grid-template-columns: 1fr 1fr !important;
   }
 
-  $carousel-height-mobile: 300px;
+  $carousel-height-mobile: 500px;
 
   .carousel {
     height: $carousel-height-mobile !important;
@@ -592,6 +621,11 @@ $control-size: 50px;
     .presentation-items {
       width: 100% !important;
     }
+  }
+
+  #about{
+    grid-template-columns: 1fr !important;
+    padding: 30px !important;
   }
 }
 
