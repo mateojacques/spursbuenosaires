@@ -814,6 +814,7 @@ body {
     margin-top: 60px;
     padding-right: 15px;
     width: 100%;
+    display: none !important;
   }
   .front .front-btns .front-btn {
     width: 25%;
